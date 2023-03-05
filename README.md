@@ -1,7 +1,7 @@
 # Backend deployment and database challenge
 
 ## My deployed API URL is:
-(Paste your render URL here)
+https://users-app-assessment-backend.onrender.com
 
 ## Overview
 In this challenge, you will take an Express API that serves hard-coded data from a JSON file and:
