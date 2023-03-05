@@ -1,10 +1,14 @@
 //const usersData = require('../usersData.json');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const db  = require('../db/dbConfig.')
 =======
 const { db } = require('../db/dbConfig.')
 >>>>>>> 5fc63e6 (adds db config, schema, seed files and updates routes and controllers)
+=======
+const db  = require('../db/dbConfig.')
+>>>>>>> 533bb3a (update db config)
 
 // const idToUserIndex = usersData.reduce((index, user) => {
 //   const { id } = user;
