@@ -1,11 +1,8 @@
 const pgp = require('pg-promise')();
 
-
 require('dotenv').config();
 
-
 const databaseUrl = process.env.DB_URL;
-
 
 const cn = {
   connectionString: databaseUrl,
