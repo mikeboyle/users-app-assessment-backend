@@ -3,6 +3,14 @@
 ## My deployed API URL is:
 [https://users-app-assessment-backend-cl.onrender.com](https://users-app-assessment-backend-cl.onrender.com)
 
+## Endpoints:
+| Resource | Method | Route       | Description                         |
+|----------|--------|-------------|-------------------------------------|
+| app      | ALL    | *           | Error message                       |
+| app      | GET    | /           | Healthcheck route                   |
+| users    | GET    | /users      | Get all users                       |
+| users    | GET    | /users/{id} | Return one user by their id of {id} |
+
 ## Questions:
 1. What is the difference between `float`, `double`, and `decimal` data types for latitude and longitude in SQL?
 
