@@ -3,6 +3,15 @@
 ## My deployed API URL is:
 [https://users-app-assessment-backend-cl.onrender.com](https://users-app-assessment-backend-cl.onrender.com)
 
+## Questions:
+1. What is the difference between `float`, `double`, and `decimal` data types for latitude and longitude in SQL?
+
+Example:
+```json
+"latitude": 19.605271,
+"longitude": -106.281246
+```
+
 ## Overview
 In this challenge, you will take an Express API that serves hard-coded data from a JSON file and:
 
