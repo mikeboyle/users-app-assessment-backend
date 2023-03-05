@@ -4,7 +4,7 @@ const { getAllUsers, getUserById } = require('../queries/usersQueries');
 const usersController = express.Router();
 
 usersController.get('/', async (req, res) => {
-  users = await getAllUsers() || [];
+  users = await getAllUsers();
   res.status(200).json({ data: users });
 });
 
