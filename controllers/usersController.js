@@ -5,10 +5,14 @@ const usersController = express.Router();
 
 usersController.get('/', async (req, res) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   users = await getAllUsers();
 =======
   users = await getAllUsers() || [];
 >>>>>>> 5fc63e6 (adds db config, schema, seed files and updates routes and controllers)
+=======
+  users = await getAllUsers();
+>>>>>>> 813cf64 (update)
   res.status(200).json({ data: users });
 });
 
