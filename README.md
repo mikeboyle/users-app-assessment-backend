@@ -34,13 +34,17 @@ In this challenge, you will take an Express API that serves hard-coded data from
 =======
  
 1. [x] deploy this API to render
- 
 1. [x] create a database for the API on ElephantSQL
 1. [x] update create a `users` table in your database
 1. [x] seed the table with the data from `usersData.json`
+<<<<<<< HEAD
  1. [x] refactor the controllers and queries to serve data from your db
  1. [x] deploy your changes so that your API on render calls the db
 >>>>>>> ace1880 (update README.md)
+=======
+1. [x] refactor the controllers and queries to serve data from your db
+1. [x] deploy your changes so that your API on render calls the db
+>>>>>>> b088d4d (feat:)
 
 See [the Detailed instructions section](#tasks) below for detailed instructions, tips, and hints.
 
