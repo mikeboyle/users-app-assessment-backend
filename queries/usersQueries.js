@@ -20,7 +20,7 @@ const getAllUsers = async () => {
 
 const getUserById = async (id) => {
   try {
-    const user = await db.one(`SELECT from users WHERE users.id=$1`, id);
+    const user = await db.one(`SELECT * from users WHERE users.id=$1`, id);
     return user;
   } catch (err) {
     return err;
