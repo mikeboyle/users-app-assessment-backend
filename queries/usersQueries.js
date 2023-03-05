@@ -1,16 +1,32 @@
-const usersData = require('../usersData.json');
+//const usersData = require('../usersData.json');
 
-const idToUserIndex = usersData.reduce((index, user) => {
-  const { id } = user;
-  index[id] = user;
-  return index;
-}, {});
+const { db } = require('../db/dbConfig.')
 
-const getAllUsers = () => usersData;
+// const idToUserIndex = usersData.reduce((index, user) => {
+//   const { id } = user;
+//   index[id] = user;
+//   return index;
+// }, {});
 
-const getUserById =(id) => {
-  return idToUserIndex[id];
-}
+
+const getAllUsers = async () => {
+  try {
+    const allUsers = await db.any(`SELECT * from users`);
+    return allUsers;
+  } catch (err) {
+    return err;
+  }
+};
+
+const getUserById = async (id) => {
+  try {
+    const user = await db.one(`SELECT from users WHERE users.id=$1`, id);
+    return user;
+  } catch (err) {
+    return err;
+  }
+};
+
 
 module.exports = {
   getAllUsers,
