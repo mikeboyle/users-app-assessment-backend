@@ -5,6 +5,7 @@ const db = require('../db');
 //   index[id] = user;
 //   return index;
 // }, {});
+//new deploy
 
 const getAllUsers = async () => {
   const users = await db.any('SELECT * FROM users');
