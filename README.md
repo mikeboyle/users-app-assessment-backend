@@ -6,6 +6,7 @@
 ## Overview
 In this challenge, you will take an Express API that serves hard-coded data from a JSON file and:
 
+<<<<<<< HEAD
  
 1. [x] deploy this API to render
 1. [x] create a database for the API on ElephantSQL
@@ -13,6 +14,14 @@ In this challenge, you will take an Express API that serves hard-coded data from
 1. [x] seed the table with the data from `usersData.json`
 1. [x] refactor the controllers and queries to serve data from your db
 1. [x] deploy your changes so that your API on render calls the db
+=======
+[*]1. deploy this API to render
+[*]1. create a database for the API on ElephantSQL
+[*]1. create a `users` table in your database
+[*]1. seed the table with the data from `usersData.json`
+[*]1. refactor the controllers and queries to serve data from your db
+1. deploy your changes so that your API on render calls the db
+>>>>>>> 5fc63e6 (adds db comfigs shema, seed files and updates routes and controllers)
 
 See [the Detailed instructions section](#tasks) below for detailed instructions, tips, and hints.
 

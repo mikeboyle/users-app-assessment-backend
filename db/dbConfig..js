@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // http://vitaly-t.github.io/pg-promise/module-pg-promise.html
 const pgp = require("pg-promise")();
 require("dotenv").config();
@@ -20,6 +21,16 @@ const cn = DATABASE_URL
       user: PG_USER,
       password: PG_PASSWORD,
     };
+=======
+const pgp = require("pg-promise")();
+require("dotenv").config();
+const cn = {
+  host: process.env.PG_HOST,
+  port: process.env.PG_PORT,
+  database: process.env.PG_DATABASE,
+  user: process.env.PG_USER,
+};
+>>>>>>> 5fc63e6 (adds db config, schema, seed files and updates routes and controllers)
 
 const db = pgp(cn);
 
