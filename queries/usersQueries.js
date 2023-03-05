@@ -1,6 +1,6 @@
 //const usersData = require('../usersData.json');
 
-const { db } = require('../db/dbConfig.')
+const db  = require('../db/dbConfig.')
 
 // const idToUserIndex = usersData.reduce((index, user) => {
 //   const { id } = user;
