@@ -1,7 +1,24 @@
 # Backend deployment and database challenge
 
 ## My deployed API URL is:
-(Paste your render URL here)
+[https://users-app-assessment-backend-cl.onrender.com](https://users-app-assessment-backend-cl.onrender.com)
+
+## Endpoints:
+| Resource | Method | Route       | Description                         |
+|----------|--------|-------------|-------------------------------------|
+| app      | ALL    | *           | Error message                       |
+| app      | GET    | /           | Healthcheck route                   |
+| users    | GET    | /users      | Get all users                       |
+| users    | GET    | /users/{id} | Return one user by their id of {id} |
+
+## Questions:
+1. What is the difference between `float`, `double`, and `decimal` data types for latitude and longitude in SQL?
+
+Example:
+```json
+"latitude": 19.605271,
+"longitude": -106.281246
+```
 
 ## Overview
 In this challenge, you will take an Express API that serves hard-coded data from a JSON file and:

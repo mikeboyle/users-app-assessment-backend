@@ -1,15 +1,15 @@
-const usersData = require('../usersData.json');
+// import database
+const db = require('../db');
 
-const idToUserIndex = usersData.reduce((index, user) => {
-  const { id } = user;
-  index[id] = user;
-  return index;
-}, {});
+// Queries
+const getAllUsers = async () => {
+  const allUsers = await db.any('SELECT * FROM users');
+  return allUsers;
+};
 
-const getAllUsers = () => usersData;
-
-const getUserById =(id) => {
-  return idToUserIndex[id];
+const getUserById = async (id) => {
+  const user = await db.oneOrNone('SELECT * FROM users WHERE id = $1', [id]);
+  return user;
 }
 
 module.exports = {
