@@ -25,10 +25,14 @@ const getAllUsers = async () => {
 const getUserById = async (id) => {
   try {
 <<<<<<< HEAD
+<<<<<<< HEAD
     const user = await db.one(`SELECT * from users WHERE users.id=$1`, id);
 =======
     const user = await db.one(`SELECT from users WHERE users.id=$1`, id);
 >>>>>>> 5fc63e6 (adds db comfigs shema, seed files and updates routes and controllers)
+=======
+    const user = await db.one(`SELECT * from users WHERE users.id=$1`, id);
+>>>>>>> 11dac8f (fix getUserById query)
     return user;
   } catch (err) {
     return err;
