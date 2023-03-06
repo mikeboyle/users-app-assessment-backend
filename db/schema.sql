@@ -2,12 +2,12 @@ DROP TABLE  IF EXISTS users;
 
     CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    age TEXT,
-    name TEXT,
-    company TEXT NOT NULL UNIQUE,
-    country TEXT,
-    photo TEXT NOT NULL UNIQUE,
+    age INT,
+    name VARCHAR(255),
+    company VARCHAR(255),
+    country VARCHAR(255),
+    photo TEXT,
     about TEXT,
-    latitude TEXT,
-    longitude TEXT UNIQUE,
+    latitude DECIMAL,
+    longitude DECIMAL,
 );
