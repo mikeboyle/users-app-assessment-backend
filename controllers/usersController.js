@@ -5,7 +5,7 @@ const usersController = express.Router();
 
 usersController.get('/', async (req, res) => {
   try {
-    const users = await getAllUsers() || [];
+    const users = await getAllUsers();
     res.status(200).json({ data: users });
   } catch (error) {
     res.status(500).json({ error: error.message });
