@@ -3,18 +3,27 @@ const { getAllUsers, getUserById } = require('../queries/usersQueries');
 
 const usersController = express.Router();
 
-usersController.get('/', (req, res) => {
-  users = getAllUsers() || [];
+usersController.get('/', async (req, res) => {
+  try {
+const users = await getAllUsers() || [];
   res.status(200).json({ data: users });
+  } catch(err) {
+    res.status(500).json({data: users})
+  }
 });
 
-usersController.get('/:id', (req, res) => {
+usersController.get('/:id', async (req, res) => {
+  try{
   const { id } = req.params;
-  user = getUserById(id);
+ const user = await getUserById(id);
   if (user) {
-    res.status(200).json({ data: user });
-  } else {
-    res.status(404).json({ error: `User with id ${id} not found`});
+   return res.status(200).json({ data: user });
+  }
+  res
+  .status(404)
+  .json({ error: `User with id ${id} not found`});
+ } catch(err) {
+    res.status(500).json({ error: err.message});
   }
 })
 
